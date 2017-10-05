@@ -20,6 +20,7 @@ trait DetectsLostConnections
         return Str::contains($message, [
             'Broken pipe or closed connection',
             'Channel connection is closed',
+            'Could not resolve host'
         ]);
     }
 }
